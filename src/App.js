@@ -8,6 +8,7 @@ class App extends Component {
     super(props)
     this.state = {
       loaded: false,
+      number: 0,
       error: null,
       people: []
     }
