@@ -11,9 +11,14 @@ class App extends Component {
       error: null,
       people: []
     }
-    getAstronauts().then(result =>
-      this.setState({ ...this.state, ...result, loaded: true })
-    ).catch(error => this.setState({...this.state, error: true, loaded: true}))
+  }
+
+  componentWillMount() {
+    getAstronauts()
+      .then(result => this.setState({ ...this.state, ...result, loaded: true }))
+      .catch(error =>
+        this.setState({ ...this.state, error: true, loaded: true })
+      )
   }
 
   render() {
