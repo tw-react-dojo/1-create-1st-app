@@ -12,9 +12,9 @@
 
 ## Easy way to serve files
 
-Instsall [serve](https://www.npmjs.com/package/serve).
+Install [serve](https://www.npmjs.com/package/serve).
 
-`npm install -g serve`
-`serve -s build`
+- `npm install -g serve` 
+- `serve -s build`
 
 _hint:_ `npm build` will actually suggest you that ^ 
