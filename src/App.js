@@ -13,7 +13,7 @@ class App extends Component {
     }
     getAstronauts().then(result =>
       this.setState({ ...this.state, ...result, loaded: true })
-    )
+    ).catch(error => this.setState({...this.state, error: true, loaded: true}))
   }
 
   render() {
